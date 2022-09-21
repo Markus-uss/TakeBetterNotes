@@ -1,1 +1,2 @@
-# 1620_assign1
+# Take Better Notes
+A simple note taking website that saves the data to your local cache.
