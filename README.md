@@ -1,2 +1,1 @@
-# TakeBetterNotes
-A simple note taking website
+# 1620_assign1

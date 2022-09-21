@@ -1,0 +1,125 @@
+@media screen and (max-width: 799px) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        border: black;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 60px 1fr 15fr 60px;
+        grid-template-areas:
+        "h h h h h h h h"
+        "m m m m m m m m"
+        "c c c c c c c c"
+        "f f f f f f f f";
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 150px;
+        grid-template-rows: 60px 1fr 60px;
+        grid-template-areas:
+        "h h h h h h h h"
+        "m c c c c c c c"
+        "f f f f f f f f";
+    }
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    background: #f3eeff;
+}
+
+.container > div not.header{
+    color: #191d1d;
+    font-family: 'Noticia Text', serif;
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #613d72;
+    color: #191d1d;
+    font-size: 1.5em;
+    font-family: 'Anton', sans-serif;
+    width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+    .menu {
+        grid-area: m;
+        font-size: 1.10em;
+        padding-top: 8px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menu {
+        grid-area: m;
+        font-size: 1.10em;
+        padding: 20px 8px 0px;
+    }
+}
+
+.content {
+    grid-area: c;
+    background-color: #ac9bc4;
+}
+
+.content_block {
+    display: grid;
+    height: 70%;
+    margin: 30px;
+    grid-template-columns: 100px 100px 0.85fr;
+    grid-template-rows: 45px 1fr;
+    grid-gap: 15px;
+}
+
+.save_buttons {
+    display: grid;
+    height: 20%;
+    margin: 30px;
+    grid-template-columns: 1fr 100px 100px 1fr;
+    grid-template-rows: 45px 45px;
+    grid-gap: 15px;
+}
+
+.footer {
+    grid-area: f;
+    background-color :#605570;
+    padding-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Noticia Text', serif;
+}
+
+@media screen and (max-width: 799px) {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+li {
+    font-size: 0.75em;
+}
+
+.hidden {
+    opacity: 0.5;
+}

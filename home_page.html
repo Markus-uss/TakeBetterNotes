@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noticia+Text&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TakeBetterNotes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><i>Take Better Notes</i></div>
+        <div class="menu" style="overflow-y: auto; overflow-x: hidden;">My Notes
+            <ul>
+                <li onclick="loadNote(innerText)">note one</li>
+                <li onclick="loadNote(innerText)">note two</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content_block">
+                <button onclick="newNote()" class="button" style="background-color: rgb(57, 126, 61);">New Note</button>
+                <button onclick="currentMode=themeChange(currentMode)" class="button" style="background-color: rgb(223, 68, 48);">Dark Theme</button>
+                <textarea class="button" style="background-color: white;grid-column-start: 1;grid-column: 1/7;text-align: start;padding: 20px;resize:none;">This is a placeholder</textarea>
+            </div>
+            <div class="save_buttons">
+                <button onclick="saveNote()" class="button" style="background-color: rgb(57, 126, 61);grid-column: 2/3;">Save</button>
+                <button onclick="cancel()" class="button" style="background-color: rgb(223, 68, 48);">Cancel</button>
+            </div>
+        </div>
+        <div class="footer">
+            Keep in Touch
+            <p style="margin:0;padding:0;"></p>
+            <a href="https://www.google.com/intl/en-GB/gmail/about/" style="text-decoration: none;">
+            <img src="images/gmail.png" style="width:20px;height:20px;" alt="gmail">
+            </a>
+            <a href="https://discord.com/" style="text-decoration: none;">
+            <img src="images/discord.png" style="width:20px;height:20px;" alt="discord">
+            </a>
+        </div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
